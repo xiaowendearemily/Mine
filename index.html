@@ -1,270 +1,185 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>简历</title>
-	<meta name='viewport' content="width=device-width,height=device-height,inital-scale=1">
+	<title>jianli</title>
+	<meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/reset.css">
-	<link rel="stylesheet" type="text/css" href="./css/resume.css">
-	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.6-dist/css/bootstrap.min.css" >
-	<link rel="stylesheet" type="text/css" href="./css/jquery.eeyellow.Timeline.css" >
+	<link rel="stylesheet" type="text/css" href="./css/cntl.min.css">
 </head>
 <body>
 <main>
-	<div class="content" id="a1">
-		<div class="home" >					
-			<div class="logo"></div>
-			<h1>蒋小文</h1>
-			<h2 id="h2">HTML5-CSS3-JS-PHP-MYSQL</h2>
-			<div class="list">
-				<ul>
-					<li>HTML5</li>
-					<li>CSS3</li>
-					<li>JS</li>
-					<li>PHP</li>
-					<li>MYSQL</li>
-				</ul>
-			</div>
-		</div>
-	</div><!-- content -->
-	<div class="content1">
-		<div class="nav">
-			<a id="bt"><i class="fa fa-navicon fa-fw"></i></a>
-			<ul class="menu">
-				<li><a class="goto" href="#a1">我的主页</a></li>
-				<li><a class="goto" href="#a2">个人资料</a></li>
-				<li><a class="goto" href="#a5">我的履历</a></li>
-				<li><a class="goto" href="#a3">我的技能</a></li>
-				<li><a class="goto" href="#a4">项目经验</a></li>
-			</ul>
-		</div>
-		<div class="_menu">
-			<div class="_menu1">
-			<ul>
-				<li class="_li"><a class="goto" href="#a1">我的主页</a></li>
-				<li class="_li"><a class="goto" href="#a2">个人资料</a></li>
-				<li class="_li"><a class="goto" href="#a5">我的履历</a></li>
-				<li class="_li"><a class="goto" href="#a3">我的技能</a></li>
-				<li class="_li"><a class="goto" href="#a4">项目经验</a></li>
-			</ul>
-			</div>
-		</div>		
-	</div><!-- content1 -->
-	<div class="info" id="a2">
-		<div class="maodian" id="maodian-info"></div>
-		<div class="myinfo">
-			<h1>个人信息</h1>
-			<div class="myinfo-pic-int">
-				<div class="pictrue">
-					<p>蒋小文</p>
-					<p id="dizhi"><a href="www.baidu.com">www.baidu.com</a></p>
-					<div class="pic">
-						<span>兴趣爱好：</span>
-						<div class="hob"><i class="fa fa-film"></i><p id="icon">电影</p></div>						
-						<div class="hob"><i class="fa fa-internet-explorer"></i><p id="icon">上网</p></div>	
-						<div class="hob"><i class="fa fa-cutlery"></i><p id="icon">美食</p></div>	
+	<div class="container" id="a1">
+		<div class="row">
+			<div class="home col-md-12 col-xs-12">
+				<div class="row">
+					<div class="homeinfo col-xs-12 col-md-6 col-md-push-3 logo"></div>
+					<div class="homeinfo col-xs-12 col-md-8 col-md-push-2 name text-center ">蒋小文</div>
+					<div class="homeinfo col-xs-12 col-md-8 col-md-push-2 course text-center ">HTML5-CSS3-JS-PHP-MYSQL</div>
+					<div class="homeinfo col-xs-12 col-md-8 col-md-push-2 list text-center">
+						<ul class="list-unstyled list-inline">
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>JS</li>
+							<li>PHP</li>
+							<li>MYSQL</li>
+						</ul>
 					</div>
 				</div>
-				<div class="in_1">
+			</div>
+		</div>
+	</div> <!-- home-container	 -->
+
+	<div class="container con-nav">
+		<div class="row">
+			<div class="nav-parent col-xs-12 col-md-12">
+				<div class="row">					
+					<div class="nav col-xs-12 col-md-4 col-md-push-3 text-center">				
+						<ul class="list-unstyled list-inline text-center">
+							<li><a class="goto" href="#a1">我的主页</a></li>
+							<li><a class="goto" href="#a2">个人资料</a></li>
+							<li><a class="goto" href="#a5">我的履历</a></li>
+							<li><a class="goto" href="#a3">我的技能</a></li>
+							<li><a class="goto" href="#a4">项目经验</a></li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-12"></div>
+		</div>
+		
+	</div> <!-- nav container -->
+	<div class="container maodian">
+		<div class="row">
+			<div class="pro-maodian col-md-12 col-xs-12" id="a2"></div>
+			<div class="mypro col-md-12 col-xs-12 text-center">个人信息</div>			
+		</div>
+	</div>
+	<div class="container con-info">
+		<div class="row">
+			<div class="myinfo col-xs-12 col-md-3 col-md-push-1 col-sm-12 text-center">
+				<div class="row">
+					<div class="col-xs-12 col-md-12  myname">蒋小文</div>
+					<div class="col-xs-12 col-md-12 github"><a href="https://xiaowendearemily.github.io/Mine/">https://xiaowendearemily.github.io/Mine/</a></div>					
+					<div class="col-xs-12 col-md-12 hob">
+						<ul class="list-unstyled list-inline text-center">
+							<li>兴趣爱好</li>
+							<li><i class="fa fa-film"></i><br/>电影</li>
+							<li><i class="fa fa-internet-explorer"></i><br/>上网</li>
+							<li><i class="fa fa-cutlery"></i><br/>美食</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="myinfo col-xs-12 col-md-3 col-md-push-1 col-sm-12 text-center">
+				<div class="tele">
 					<p>电话：17308158311</p>
 					<p>住址：绵阳市经开区</p>
 					<p>邮箱：504454767@qq.com</p>
 					<p>学历：本科</p>
-					<p>一年php开发经验</p>
+					<p>一年php开发经验</p>				
 				</div>
-				<div class="in_2">
-					<article>
-						有较强的自学能力，有一颗解决问题的心，相信办法总比问题多，为人友善，能够很好的融入大集体，工作中善于交流，注重团队合作，提高工作效率。<br/><br/><br/>
-						教育背景：2006——2010年就读四川大学软件工程系。<br/><br/><br/>
-						工作经历：先后从事过两份技术支持的工作。2016年8月至今，知行软件公司，从事php开发。<br/><br/><br/>
-					</article>
-
-				</div>				
+			</div>
+			<div class="myinfo col-xs-12 col-md-4 col-md-push-1 col-sm-12">
+				<article>
+					有较强的自学能力，有一颗解决问题的心，相信办法总比问题多，为人友善，能够很好的融入大集体，工作中善于交流，注重团队合作，提高工作效率。<br/>
+					教育背景：2006——2010年就读四川大学软件工程系。<br/>
+					工作经历：<br/>
+					2011-2013：绵阳今昔软件公司，职位：售后技术支持;<br/>
+					2013-2016：绵阳浩风科技公司，职位：售后技术支持;<br/>
+					2016年8月至今，知行软件公司，从事php开发。
+				</article>
 			</div>
 		</div>
-	<div class="lvli" id="a5">
-		<div class="maodian" id="md5"></div>
-		<div class="myexp"><p>我的履历</p></div>
-		<div class="work">工作经历</div>
-		<div class="container">
-		  <div class="row">
-		    <div class="col-md-12">
-		      <div class="VivaTimeline">
-		        <dl>
-		          <dt>2017 2月</dt>
-		          <dd class="pos-left clearfix">
-		          <div class="circ"></div>
-		              <div class="time">Feb</div>
-		              <div class="events">
-		                    <div class="events-header">中药管理系统</div>
-		                    <div class="events-body">
-		                          <div class="row">
-		                            <div class="col-md-6 pull-left">
-		                                  <img class="events-object img-responsive img-rounded" src="img/1.jpg" />
-		                                </div>
-		                                <div class="events-desc">
-		                                  ......
-		                                </div>
-		                          </div>
-		                          <div class="row">
-		                            <div class="col-md-6 pull-left">
-		                                  <img class="events-object img-responsive img-rounded" src="img/2.jpg" />
-		                              </div>
-		                              <div class="events-desc">
-		                                  ......
-		                              </div>
-		                          </div>
-		                    </div>
-		                    <div class="events-footer">
-		                        主要功能：医生处方、药品进销存管理。<br/>主要工作：业务流程分析，表结构分析，数据表创建，医生开具、查询、复用、撤销处方，以及设置和管理经验处方，基础数据维护，药房药库药品的进销存管理。<br/>
-							我的工作：业务流程分析，分析结构，建表。用户创建，登录验证，医生处方相关业务。药库采购、退换药品，库存管理等。								
-		                    </div>
-		              </div>
-		          </dd>
-		          <!-- 其它时间节点 -->
-		          <dt>2016 12</dt>
-		          <dd class="pos-right clearfix">
-		          <div class="circ"></div>
-		              <div class="time">Dec</div>
-		              <div class="events">
-		                    <div class="events-header">BBS论坛</div>
-		                    <div class="events-body">
-		                          <div class="row">
-		                            <div class="col-md-6 pull-left">
-		                                  <img class="events-object img-responsive img-rounded" src="img/1.jpg" />
-		                                </div>
-		                                <div class="events-desc">
-		                                  ......
-		                                </div>
-		                          </div>
-		                          <div class="row">
-		                            <div class="col-md-6 pull-left">
-		                                  <img class="events-object img-responsive img-rounded" src="img/2.jpg" />
-		                              </div>
-		                              <div class="events-desc">
-		                                  ......
-		                              </div>
-		                          </div>
-		                    </div>
-		                    <div class="events-footer">
-		                      主要工作：包含了数据库建表，论坛主页面、登录注册窗口、发帖，回帖，回复，删帖，顶贴等。
-						<br/>
-							使用到的工具：
-							ThinkPHP框架，开发工具包括WampServer、Sublime Text、MySQL。<br/>
-		                    </div>
-		              </div>
-		          </dd>
-		          <dt>2016 10</dt>
-		          <dd class="pos-left clearfix">
-		          <div class="circ"></div>
-		              <div class="time">Oct</div>
-		              <div class="events">
-		                    <div class="events-header">Keep健身</div>
-		                    <div class="events-body">
-		                          <div class="row">
-		                            <div class="col-md-6 pull-left">
-		                                  <img class="events-object img-responsive img-rounded" src="img/1.jpg" />
-		                                </div>
-		                                <div class="events-desc">
-		                                  ......
-		                                </div>
-		                          </div>
-		                          <div class="row">
-		                            <div class="col-md-6 pull-left">
-		                                  <img class="events-object img-responsive img-rounded" src="img/2.jpg" />
-		                              </div>
-		                              <div class="events-desc">
-		                                  ......
-		                              </div>
-		                          </div>
-		                    </div>
-		                    <div class="events-footer">
-		                     采用HTML5/CSS3，用React布局制作的Keep健身教练网站。实时获取数据进行页面渲染。同时还使用了Webpack自动打包技术，自动打包文件，刷新页面，非常方便高效。
-		                    </div>
-		              </div>
-		          </dd>		          
-		        </dl>
-		      </div>
-		    </div>
-		  </div>
+	</div>  <!-- myinfo container -->
+	<div class="container maodian">
+		<div class="row">
+			<div class="pro-maodian col-md-12 col-xs-12" id="a5"></div>
+			<div class="mypro col-md-12 col-xs-12 text-center">我的履历</div>			
 		</div>
-		<div class="work">教育经历</div>
-		<div class="container">
-		  <div class="row">
-		    <div class="col-md-12">
-		      <div class="VivaTimeline">
-		        <dl>
-		          <dt>2006 9月</dt>
-		          <dd class="pos-left clearfix">
-		          <div class="circ"></div>
-		              <div class="time">Sep</div>
-		              <div class="events">
-		                    <div class="events-header">四川大学</div>
-		                    <div class="events-body">
-		                          <div class="row">
-		                            <div class="col-md-6 pull-left">
-		                                  <img class="events-object img-responsive img-rounded" src="img/1.jpg" />
-		                                </div>
-		                                <div class="events-desc">
-		                                  ......
-		                                </div>
-		                          </div>
-		                          <div class="row">
-		                            <div class="col-md-6 pull-left">
-		                                  <img class="events-object img-responsive img-rounded" src="img/2.jpg" />
-		                              </div>
-		                              <div class="events-desc">
-		                                  ......
-		                              </div>
-		                          </div>
-		                    </div>
-		                    <div class="events-footer">
-		                        2006--2010：就读于四川大学软件工程系。取得了工学学士学位，在校期间曾多次获得学校级奖学金。				
-		                    </div>
-		              </div>
-		          </dd>
-		          <!-- 其它时间节点 -->
-		          <dt>2003 9</dt>
-		          <dd class="pos-right clearfix">
-		          <div class="circ"></div>
-		              <div class="time">Sep</div>
-		              <div class="events">
-		                    <div class="events-header">三台县芦溪中学</div>
-		                    <div class="events-body">
-		                          <div class="row">
-		                            <div class="col-md-6 pull-left">
-		                                  <img class="events-object img-responsive img-rounded" src="img/1.jpg" />
-		                                </div>
-		                                <div class="events-desc">
-		                                  ......
-		                                </div>
-		                          </div>
-		                          <div class="row">
-		                            <div class="col-md-6 pull-left">
-		                                  <img class="events-object img-responsive img-rounded" src="img/2.jpg" />
-		                              </div>
-		                              <div class="events-desc">
-		                                  ......
-		                              </div>
-		                          </div>
-		                    </div>
-		                    <div class="events-footer">
-		                      高中生活，奋发向上，努力学习。
-		                    </div>
-		              </div>
-		          </dd>   
-		        </dl>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-	</div><!-- 项目时间轴 -->
 	</div>
-	<div id="a3">
-		<div class="maodian"><p>我会什么</p></div>
-		<div class="skill" >
-			<div class="sk">
-				<p id="num1" class="num">0%</p>									
+	<!-- timeline -->
+	<div class="container">
+		<div class="row">
+			<div class="myexp cntl col-xs-12 col-md-12 text-center">工作经历</div>
+			<div class="cntl col-xs-12 col-md-12">
+			  	<span class="cntl-bar cntl-center">
+			    	<span class="cntl-bar-fill"></span>
+			  	</span>
+			  	<div class="cntl-states">
+			    <div class="cntl-state">
+			      	<div class="cntl-content">
+				        <h4>中药管理系统</h4>
+				        <p>主要功能：医生处方、药品进销存管理。<br/>主要工作：业务流程分析，表结构分析，数据表创建，医生开具、查询、复用、撤销处方，以及设置和管理经验处方，基础数据维护，药房药库药品的进销存管理。<br/>我的工作：业务流程分析，分析结构，建表。用户创建，登录验证，医生处方相关业务。药库采购、退换药品，库存管理等</p>
+			    	</div>
+			      	<div class="cntl-icon cntl-center" id="mytime">2017.2</div>
+			    </div>
+			 
+			    <div class="cntl-state">
+			      	<div class="cntl-content">
+				        <h4>BBS论坛</h4>
+				        <p>主要工作：包含了数据库建表，论坛主页面、登录注册窗口、发帖，回帖，回复，删帖，顶贴等。<br/>使用到的工具：		ThinkPHP框架，开发工具包括WampServer、Sublime Text、MySQL。<br/></p>
+			      	</div>
+			     	 <div class="cntl-icon cntl-center" id="mytime">2016.12</div>
+			    </div> 
+			     
+			    <div class="cntl-state">
+			      	<div class="cntl-content">
+				        <h4>KEEP健身教练</h4>
+				        <p>采用HTML5/CSS3，用React布局制作的Keep健身教练网站。实时获取数据进行页面渲染。
+								同时还使用了Webpack自动打包技术，自动打包文件，刷新页面，非常方便高效。</p>
+			      	</div>
+			      	<div class="cntl-icon cntl-center" id="mytime">2016.10</div>
+			    </div>			    
+			  </div>
+			</div> 
+		</div>
+
+		<div class="row">
+			<div class="myexp cntl col-xs-12 col-md-12 text-center">教育经历</div>
+			<div class="cntl col-xs-12 col-md-12">
+			  	<span class="cntl-bar cntl-center">
+			    	<span class="cntl-bar-fill"></span>
+			  	</span>
+			  	<div class="cntl-states">
+			    <div class="cntl-state">
+			      	<div class="cntl-content">
+				        <h4>四川大学</h4>
+				        <p>
+2006--2010：就读于四川大学软件工程系。取得了工学学士学位，在校期间曾多次获得学校级奖学金。</p>
+			    	</div>
+			      	<div class="cntl-icon cntl-center" id="mytime">2006.9</div>
+			    </div>
+			 
+			    <div class="cntl-state">
+			      	<div class="cntl-content">
+				        <h4>芦溪高中</h4>
+				        <p>高中生活，奋发向上，努力学习。</p>
+			      	</div>
+			     	 <div class="cntl-icon cntl-center" id="mytime">2003.9</div>
+			    </div>     
+			  </div>
+			</div> 
+		</div>
+
+
+
+	</div>
+	<!-- timeline -->
+	
+
+	<!-- <div>我会什么</div> -->
+	<div class="container maodian">
+		<div class="row">
+			<div class="pro-maodian col-md-12 col-xs-12" id="a3"></div>
+			<div class="mypro col-md-12 col-xs-12 text-center">我会什么</div>			
+		</div>
+	</div>
+	<div class="container con-skill">
+		<div class="row skill">
+			<div class="sk col-xs-12 col-md-4 col-sm-5">
+				<span id="num1" class="num">0%</span>									
 				<canvas id="canvas1" class="ca"></canvas>
 				<div class="skill-introduce">
 					<p class="skill-introdece-title">HTML/CSS3</p>
@@ -273,8 +188,8 @@
 					</article>
 				</div>				
 			</div>
-			<div class="sk">
-				<p id="num2" class="num">0%</p>	
+			<div class="sk col-xs-12 col-md-4 col-sm-5">
+				<span id="num2" class="num">0%</span>	
 				<canvas id="canvas2" class="ca"></canvas>
 				<div class="skill-introduce">
 					<p class="skill-introdece-title">JAVASCRIPT/JQUERY</p>
@@ -283,8 +198,8 @@
 					</article>
 				</div>
 			</div>
-			<div class="sk">
-				<p id="num3" class="num">0%</p>	
+			<div class="sk col-xs-12 col-md-4 col-sm-5">
+				<span id="num3" class="num">0%</span>	
 				<canvas id="canvas3" class="ca"></canvas>
 				<div class="skill-introduce">
 					<p class="skill-introdece-title">PHP</p>
@@ -293,8 +208,8 @@
 					</article>
 				</div>
 			</div>
-			<div class="sk">
-				<p id="num4" class="num">0%</p>	
+			<div class="sk col-xs-12 col-md-4 col-sm-5">
+				<span id="num4" class="num">0%</span>	
 				<canvas id="canvas4" class="ca"></canvas>
 				<div class="skill-introduce">
 					<p class="skill-introdece-title">MYSQL</p>
@@ -303,8 +218,8 @@
 					</article>
 				</div>
 			</div>
-			<div class="sk">
-				<p id="num5" class="num">0%</p>	
+			<div class="sk col-xs-12 col-md-4 col-sm-4">
+				<span id="num5" class="num">0%</span>	
 				<canvas id="canvas5" class="ca"></canvas>
 				<div class="skill-introduce">
 					<p class="skill-introdece-title">代码编辑器</p>
@@ -313,66 +228,73 @@
 					</article>
 				</div>
 			</div>
-		</div>			
+		</div>
+	</div>  <!-- skill container -->
+	<div class="container maodian">
+		<div class="row">
+			<div class="pro-maodian col-md-12 col-xs-12" id="a4"></div>
+			<div class="mypro col-md-12 col-xs-12 text-center">项目经验</div>			
+		</div>
 	</div>
-
-	<div id="a4">
-		<div class="maodian"><p>项目经验</p></div>
-		<div class="pro">
-			<div class="pro1">
-				<div class="protext">
-					<div class="proTitle">
-						<p>BBS论坛系统</p>
-					</div>
-					<div class="line"><hr/></div>
-					<div class="proContent">
-						<article>包含了数据库建表，论坛主页面、登录注册窗口、发帖，回帖，回复，删帖，顶贴等。
-						<br/>
-						使用到的工具：
-						ThinkPHP框架，开发工具包括WampServer、Sublime Text、MySQL。<br/>
-						</article>
-					</div>
-				</div>
-			</div>
-			<div class="pro1">
-				<div class="protext">
-					<div class="proTitle">
-						<p>中药管理系统</p>
-					</div>
-					<div class="line"><hr/></div>
-					<div class="proContent">
-						<article>
-							主要功能：医生处方、药品进销存管理。<br/>主要工作：业务流程分析，表结构分析，数据表创建，医生开具、查询、复用、撤销处方，以及设置和管理经验处方，基础数据维护，药房药库药品的进销存管理。<br/>
-							我的工作：业务流程分析，分析结构，建表。用户创建，登录验证，医生处方相关业务。药库采购、退换药品，库存管理等。
-						</article>
+	<div class="container" >		
+		<div class="row">
+			<div class="pro1 col-xs-12 col-md-4 col-sm-4" >
+				<div class="row">
+					<div class="protext col-md-12">
+						<div class="proTitle">
+							<p>BBS论坛系统</p>
+						</div>
+						<div class="line"><hr/></div>
+						<div class="proContent">
+							<article>包含了数据库建表，论坛主页面、登录注册窗口、发帖，回帖，回复，删帖，顶贴等。
+							<br/>
+							使用到的工具：
+							ThinkPHP框架，开发工具包括WampServer、Sublime Text、MySQL。<br/>
+							</article>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="pro1">
-				<div class="protext">
-					<div class="proTitle">
-						<p>Keep健身教练</p>
-					</div>
-					<div class="line"><hr/></div>
-					<div class="proContent">
-						<article>
-							采用HTML5/CSS3，用React布局制作的Keep健身教练网站。实时获取数据进行页面渲染。
-							同时还使用了Webpack自动打包技术，自动打包文件，刷新页面，非常方便高效。
-						</article>
+			<div class="pro1 col-xs-12 col-md-4 col-sm-4">
+				<div class="row">
+					<div class="protext">
+						<div class="proTitle">
+							<p>中药管理系统</p>
+						</div>
+						<div class="line"><hr/></div>
+						<div class="proContent">
+							<article>
+								主要功能：医生处方、药品管理。<br/>主要工作：业务流程分析，表结构分析，数据表创建，医生开具、查询、复用、撤销处方，以及设置和管理经验处方，基础数据维护，药房药库药品的进销存管理。<br/>
+								我的工作：业务流程分析，分析结构，建表。用户创建，登录验证，医生处方相关业务。药库采购、退换药品，库存管理等。
+							</article>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div> 
+			<div class="pro1 col-xs-12 col-md-4 col-sm-4">
+				<div class="row">
+					<div class="protext">
+						<div class="proTitle">
+							<p>Keep健身教练</p>
+						</div>
+						<div class="line"><hr/></div>
+						<div class="proContent">
+							<article>
+								采用HTML5/CSS3，用React布局制作的Keep健身教练网站。实时获取数据进行页面渲染。
+								同时还使用了Webpack自动打包技术，自动打包文件，刷新页面，非常方便高效。
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="end"></div>
-
-
-
-	
-	<script src="./js/jquery-2.2.3.min.js"></script>
-	<script type="text/javascript" src="./js/resume.js"></script>	
-	<script type="text/javascript" src="./bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.eeyellow.Timeline.js"></script>
 </main>
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/jquery.cntl.min.js"></script>
 </body>
 </html>
